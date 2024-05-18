@@ -1,0 +1,91 @@
+.register-container {
+  background-color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 3rem;
+  padding: 3.5rem;
+  height: 45rem;
+  border-radius: 10px;
+}
+
+.register-container h1 {
+  margin: 0px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem;
+  width: 90%;
+}
+
+.register-form input {
+  padding: 0.5rem;
+  font-family: "Kanit", sans-serif;
+  background-color: transparent;
+  font-size: 20px;
+  border: none;
+  border-bottom: solid 1px #151518;
+  width: 90%;
+}
+
+.match-password-msg {
+  margin: 0rem;
+  font-size: 0.9rem;
+  position: absolute;
+  color: #8a8a8a;
+  margin-top: 0.5rem;
+}
+
+#password-requirements-container {
+  text-align: left;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -10px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: gray;
+}
+
+.invalid:before {
+  position: relative;
+  left: -10px;
+  content: "✖";
+}
+
+.register-placeholder {
+  padding: 0.5rem;
+  color: #353a3f;
+  border: none;
+  font-size: 18px;
+  background-color: #343a40a4;
+  border-radius: 8px;
+  font-family: "Kanit", sans-serif;
+}
+
+.register-button {
+  padding: 0.5rem;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  background-color: #219ebc;
+  box-shadow: rgba(0, 0, 0, 0.534) 0px -30px 36px -28px inset;
+  border: none;
+  border-radius: 8px;
+  font-family: "Kanit", sans-serif;
+}

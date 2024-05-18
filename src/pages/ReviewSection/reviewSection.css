@@ -1,0 +1,76 @@
+.recommend-progress-container {
+  margin-bottom: 2rem;
+}
+
+.recommend-progress-container p {
+  color: #a0a0a0;
+  margin: 0px;
+  font-style: italic;
+}
+
+.percentage {
+  color: #00869e; 
+}
+
+#happy {
+  font-size: 1.5rem;
+  color: #00869e;
+  margin: 5px;
+}
+
+#mad {
+  font-size: 1.5rem;
+  color: #696969;
+  margin: 5px;
+}
+
+.recommend-progress-bar {
+  -webkit-appearance: none;
+  width: 15rem;
+  margin-bottom: 5px;
+  border: 3px solid #a5a5a5;
+  border-radius: 10px;
+  height: 1rem;
+}
+
+.recommend-progress-bar::-webkit-progress-bar {
+  background-color: #696969;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.recommend-progress-bar::-webkit-progress-value {
+  background-color: #00869e;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+  inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.review-header {
+  color: white;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  margin: 5px;
+  background-color: transparent;
+  border-bottom: solid 3px #28282c;
+  z-index: 2;
+}
+
+.recommend-container {
+  padding: 10px;
+}
+
+.user-recommendation {
+  margin-bottom: 10px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+.radio-button {
+  margin: 5px;
+  padding: 0px;
+  width: 20px;
+}

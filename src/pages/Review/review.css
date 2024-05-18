@@ -1,0 +1,36 @@
+.review-section {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+.user-info-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  height: 3rem;
+}
+
+.recommendation {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  color: gray;
+}
+
+#check-icon {
+  align-self: center;
+  color: green;
+}
+
+#x-icon {
+  align-self: center;
+  color: red;
+}
+
+.recommendation p {
+  margin: 5px;
+}

@@ -1,0 +1,71 @@
+.replies {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.reply-container {
+  display: flex;
+  border-left: solid 1.5px #219ebc;
+}
+
+.replies-profile-pic {
+  width: 70px;
+  height: 70px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  object-fit: cover;
+  border: 2px solid #525252;
+}
+
+.reply {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.reply-user-info {
+  display: flex;
+  gap: .5rem;
+  height: 2.5rem;
+  text-align: center;
+}
+
+.reply-username {
+  margin: 0rem;
+  font-size: 1.4rem;
+  color: #dfbb60;
+}
+
+.reply-date {
+  padding: 0px;
+  margin: .4rem;
+  text-align: center;
+  font-size: .9rem;
+  color: gray;
+}
+
+.reply-content {
+  margin: 0px;
+  padding: 5px;
+}
+
+.delete-reply {
+  align-self: flex-start;
+  font-family: 'Kanit', sans-serif;
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: .3rem 0.2rem;
+  color: grey;
+  transition: .3s;
+}
+
+.delete-reply:hover {
+  background-color: #b8d8e05e;
+  color: white;
+  border-radius: 5px;
+}

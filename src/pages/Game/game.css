@@ -1,0 +1,212 @@
+@import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 85%;
+  background-color: #1f1f23;
+  border: solid 1.5px #3e3e44;
+  border-top: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+  color: #c7c7c7;
+  font-size: 18px;
+  position: fixed;
+  top: 2rem;
+}
+
+.game-info {
+  display: flex;
+  position: sticky;
+  flex-direction: column;
+  align-self: flex-start;
+  padding: 2rem;
+  border-top: none;
+  border-bottom: none;
+  top: 0;
+}
+
+.game-title-container {
+  display: flex;
+  padding-left: 3rem;
+  margin-top: 2rem;
+}
+
+.game-title {
+  font-size: 45px;
+  color: white;
+  letter-spacing: 2px;
+  margin-bottom: 0px; 
+}
+
+.game-img {
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.game-info p {
+  margin: 2px;
+  font-size: 15px;
+  color: #6b6b79;
+}
+
+a {
+  color: #dfbb60;
+}
+
+.play-button {
+  padding: 0.6rem;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #dfbb60;;
+  color: #1f1f23;
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5rem;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.671) 0px -40px 36px -28px inset;
+}
+
+.play-button:hover {
+  color: white;
+}
+
+#bookmark {
+  align-self: center;
+  font-size: 12px;
+  cursor: pointer;
+  color: #84848d;
+}
+
+.save-game-button {
+  padding: 0.6rem;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #84848d;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #84848d;
+  font-family: "Kanit", sans-serif;
+  font-size: 15px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.game-contents-container {
+  display: flex;
+  border-bottom: solid 1.5px #3e3e44;
+}
+
+.game-description {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem;
+  width: 100%;
+}
+
+.screenshots-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #3a3a3f;
+}
+
+.game-screenshots {
+  width: 16rem;
+  border-radius: 5px;
+}
+
+.more-game-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1rem;
+  font-size: 16px;
+}
+
+.more-game-info h3 {
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #3a3a3f;
+  color: white;
+  letter-spacing: 1.2px;
+}
+
+li {
+  margin: 8px;
+}
+
+li::marker {
+  color: #44444d;
+}
+
+@media (max-width: 1770px) {
+  .game-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .screenshots-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1085px) {
+  .game-title {
+    font-size: 35px;
+  }
+
+  .game-img {
+    width: 20rem;
+  }
+
+  .screenshots-container {
+    justify-content: center;
+  }
+
+  .game-description {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .game-screenshots {
+    width: 14rem;
+  }
+
+  .recommendation p {
+    font-size: 14px;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 900px) {
+  .game-contents-container {
+    flex-direction: column;
+  }
+
+  .game-info {
+    position: relative;
+    align-self: center;
+    width: 80%;
+  }
+
+  .game-img {
+    width: 100%;
+  }
+
+ .review-section {
+  width: 90%;
+ }
+}

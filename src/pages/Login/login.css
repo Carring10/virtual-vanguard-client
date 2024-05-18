@@ -1,0 +1,110 @@
+@import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
+
+dialog::backdrop {
+  background-color: #151518b4;
+}
+
+dialog {
+  border: none;
+  border-radius: 2%;
+  padding: 2rem;
+  width: 25rem;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.close-button {
+  font-family: "Kanit", sans-serif;
+  color: #7f7f8b;
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  top: 0.4rem;
+  right: .5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.sign-in {
+  text-align: center;
+  font-size: 2.5rem;
+  color: black;
+  margin: 1.5rem;
+}
+
+.login-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.login-input {
+  font-family: "Kanit", sans-serif;
+  background-color: transparent;
+  width: 80%;
+  border: none;
+  border-bottom: solid 1px #151518;
+}
+
+#login-icon {
+  color: grey;
+  font-size: 20px;
+}
+
+input {
+  border: none;
+  font-size: 20px;
+  width: 80%;
+  padding-left: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.login-button {
+  font-family: "Kanit", sans-serif;
+  width: 80%;
+  font-size: 1rem;
+  color: white;
+  background-color: #219ebc;
+  box-shadow: rgba(0, 0, 0, 0.534) 0px -30px 36px -28px inset;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+dialog p {
+  color: #7f7f8b;
+  margin: 0px;
+  text-align: center;
+}
+
+.create-account-link {
+  color: #219ebc !important;
+  text-decoration: none;
+}
+
+.create-account-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 660px) {
+  dialog {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 460px) {
+  dialog {
+    width: 15rem;
+  }
+
+  .login-input {
+    width: 100%;
+  }
+}

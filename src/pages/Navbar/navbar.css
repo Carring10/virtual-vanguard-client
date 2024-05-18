@@ -1,0 +1,269 @@
+@import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0rem;
+  background-color: #151518;
+  border: solid 1.5px #3e3e44;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  z-index: 1;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #dfbb60;
+  margin: 0rem 2.5rem;
+  font-family: Audiowide;
+  font-size: 0.6rem;
+}
+
+.categories {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 20px;
+}
+
+.categories a {
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #727272;
+  transition: .4s;
+}
+
+.categories a:hover {
+  color: white;
+}
+
+.categories i {
+  font-size: 15px;
+}
+
+.nav-login-button {
+  margin: 1rem;
+  text-decoration: none;
+  color: #dfbb60;
+  background-color: transparent;
+  border: 0.1rem solid #dfbb60;
+  border-radius: 7px;
+  transition: 0.5s;
+  font-family: "Kanit", sans-serif;
+  cursor: pointer;
+  width: 9rem;
+  height: 2rem;
+  z-index: 2;
+}
+
+.nav-login-button:hover {
+  background-color: #dfbb60;
+  color: #151518;
+}
+
+.logout-container {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-container {
+  margin: 1rem 2rem;
+}
+
+.btn {
+  background-color: #3a3a41;
+  color: white;
+  width: 130px;
+  text-align: center;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  box-shadow: var(--shadow);
+  position: relative;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  background-color: #303036;
+}
+
+.bx {
+  font-size: 1.1rem;
+}
+
+.dropdown {
+  position: absolute;
+  border-radius: 5px;
+  width: 130px;
+  margin-top: 0.3rem;
+  background: #3a3a41;
+  transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+  transform: translateY(0.5rem);
+  visibility: hidden;
+  opacity: 0;
+  
+}
+
+.links-dropdown {
+  position: absolute;
+  border-radius: 5px;
+  width: 130px;
+  margin-top: 0.3rem;
+  background: #3a3a41;
+  transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+  transform: translateY(0.5rem);
+  visibility: hidden;
+  opacity: 0;
+  
+}
+
+.show {
+  transform: translateY(0rem);
+  visibility: visible;
+  opacity: 1;
+}
+
+.arrow {
+  transform: rotate(180deg);
+  transition: 0.2s ease;
+}
+
+.dropdown a {
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  color: white;
+  transition: 0.4s;
+}
+
+.dropdown a:hover {
+  background-color: #dfbb60;
+  color: black;
+}
+
+.logout-link {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.profile-link:hover {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.logout-button {
+  padding: 0.4rem 1.5rem;
+  margin: 1.5rem;
+  text-decoration: none;
+  color: #dfbb60;
+  background-color: transparent;
+  border: 0.1rem solid #dfbb60;
+  border-radius: 7px;
+  transition: 0.5s;
+  font-family: "Kanit", sans-serif;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #dfbb60;
+  color: #151518;
+}
+
+.username {
+  color: #dfbb60;
+  text-align: center;
+}
+
+#menu-icon {
+  display: flex;
+  align-self: center;
+  color: white;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+@media (max-width: 1130px) {
+  .categories a {
+    font-size: .8rem;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 990px) {
+  .logo {
+    font-size: 0.5rem;
+  }
+
+  .nav-login-button {
+    width: 8rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .logo {
+    font-size: 7px;
+    margin: 0rem 1rem;
+  }
+
+  .bx {
+    font-size: 0.9rem;
+  }
+
+  .categories a {
+    font-size: .8rem;
+  }
+
+  .nav-login-button {
+    width: 7rem;
+    height: 1.8rem;
+    font-size:  10px;
+  }
+}
+
+@media (max-width: 750px) {
+  .categories {
+    position: relative;
+  }
+
+  .nav-login-button {
+    width: 6rem;
+    height: 1.7rem;
+    font-size:  10px;
+  }
+}
+
+@media (max-width: 715px) {
+  .logo {
+    display: none;
+  }
+
+  #links-dropdown {
+    margin-left: 10px;
+  }
+
+  .categories {
+    margin: 15px;
+  }
+
+  .categories a {
+    display: flex;
+    font-size: 12px;
+    color: white;
+  }
+
+  #category-icon {
+    margin-right: 5px;
+  }
+}
