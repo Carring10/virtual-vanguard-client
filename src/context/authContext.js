@@ -12,7 +12,7 @@ export const AuthContextProvider = ({ children }) => {
   );
 
   const login = async (input) => {
-    const res = await axios.post('http://localhost:8800/auth/login', input, {
+    const res = await axios.post('https://virtual-vanguard-mmo-f84f119b0dd9.herokuapp.com/auth/login', input, {
       withCredentials: true,
       sameSite: "none"
     });
@@ -20,7 +20,7 @@ export const AuthContextProvider = ({ children }) => {
   }
 
   const register = async (input) => {
-    const res = await axios.post('http://localhost:8800/auth/register', input);
+    const res = await axios.post('https://virtual-vanguard-mmo-f84f119b0dd9.herokuapp.com/auth/register', input);
     setCurrentUser(res.data);
   }
   

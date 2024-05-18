@@ -33,7 +33,7 @@ export const Profile = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await axios.get(`http://localhost:8800/users/get/${username}`);
+        const response = await axios.get(`https://virtual-vanguard-mmo-f84f119b0dd9.herokuapp.com/users/get/${username}`);
         setCurrentUser(response.data[0]);
       } catch (err) {
         console.log(err);
@@ -43,7 +43,7 @@ export const Profile = () => {
   }, [setCurrentUser, username]);
 
   const { data } = useQuery(["games"], () =>
-    axios.get(`http://localhost:8800/games/getGames/${username}`).then((res) => {
+    axios.get(`https://virtual-vanguard-mmo-f84f119b0dd9.herokuapp.com/games/getGames/${username}`).then((res) => {
       const data = res.data.games;
       return data;
     })
@@ -68,7 +68,7 @@ export const Profile = () => {
       const formData = new FormData();
       formData.append("file", file);
 
-      const res = await axios.post("http://localhost:8800/upload", formData);
+      const res = await axios.post("https://virtual-vanguard-mmo-f84f119b0dd9.herokuapp.com/upload", formData);
       return res.data;
     } catch (err) {
       console.log(err);
@@ -78,7 +78,7 @@ export const Profile = () => {
   const updatePic = useMutation(
     (newPic) => {
       console.log(newPic);
-      return axios.put("http://localhost:8800/users/updatePic", newPic);
+      return axios.put("https://virtual-vanguard-mmo-f84f119b0dd9.herokuapp.com/users/updatePic", newPic);
     },
     {
       onSuccess: () => {
@@ -117,7 +117,7 @@ export const Profile = () => {
   const deleteGame = useMutation(
     (deletedData) => {
       console.log("deletedData", deletedData);
-      return axios.delete("http://localhost:8800/games/delete", { data: deletedData });
+      return axios.delete("https://virtual-vanguard-mmo-f84f119b0dd9.herokuapp.com/games/delete", { data: deletedData });
     },
     {
       onSuccess: () => {

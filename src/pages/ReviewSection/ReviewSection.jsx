@@ -21,7 +21,7 @@ export const ReviewSection = ({ gameId }) => {
   const { data } = useQuery(
     ["reviews"],
     () =>
-      axios.get(`http://localhost:8800/reviews/${gameId}`).then((res) => {
+      axios.get(`https://virtual-vanguard-mmo-f84f119b0dd9.herokuapp.com/reviews/${gameId}`).then((res) => {
         const data = res.data.reviews;
         console.log(data);
         return data;
@@ -33,7 +33,7 @@ export const ReviewSection = ({ gameId }) => {
 
   const addReview = useMutation(
     (newReview) => {
-      return axios.post("http://localhost:8800/reviews", newReview, {
+      return axios.post("https://virtual-vanguard-mmo-f84f119b0dd9.herokuapp.com/reviews", newReview, {
         withCredentials: true,
       });
     },

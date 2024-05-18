@@ -26,7 +26,7 @@ export const Comment = ({ comment }) => {
   const deleteComment = useMutation(
     (deletedComment) => {
       return axios.delete(
-        `http://localhost:8800/comments/${deletedComment.id}/${deletedComment.userId}`
+        `https://virtual-vanguard-mmo-f84f119b0dd9.herokuapp.com/comments/${deletedComment.id}/${deletedComment.userId}`
       );
     },
     {

@@ -16,7 +16,7 @@ export const CommentSection = ({ articleId }) => {
   const queryClient = useQueryClient();
 
   const { data } = useQuery(["comments"], () =>
-    axios.get(`http://localhost:8800/comments/${articleId}`).then((res) => {
+    axios.get(`https://virtual-vanguard-mmo-f84f119b0dd9.herokuapp.com/comments/${articleId}`).then((res) => {
       const data = res.data.comments;
       return data;
     })
@@ -25,7 +25,7 @@ export const CommentSection = ({ articleId }) => {
   // Mutation used to make changes to the server, provide data as 'newComment'
   const addComment = useMutation(
     (newComment) => {
-      return axios.post("http://localhost:8800/comments", newComment, {
+      return axios.post("https://virtual-vanguard-mmo-f84f119b0dd9.herokuapp.com/comments", newComment, {
         withCredentials: true,
       });
     },

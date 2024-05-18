@@ -27,7 +27,7 @@ export const ReplyForm = ({ comment, hideReplyForm }) => {
 
   const addReply = useMutation(
     (newComment) => {
-      return axios.post("http://localhost:8800/comments", newComment, {
+      return axios.post("https://virtual-vanguard-mmo-f84f119b0dd9.herokuapp.com/comments", newComment, {
         withCredentials: true,
       });
     },

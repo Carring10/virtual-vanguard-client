@@ -76,7 +76,7 @@ export const Game = () => {
 
   useEffect(() => {
     if (currentUser) {
-      const getUserGames = "http://localhost:8800/games/getGames/" + currentUser.username;
+      const getUserGames = "https://virtual-vanguard-mmo-f84f119b0dd9.herokuapp.com/games/getGames/" + currentUser.username;
 
       const fetchUserGames = async () => {
         try {
@@ -94,7 +94,7 @@ export const Game = () => {
 
   const saveGame = useMutation(
     (data) => {
-      return axios.post("http://localhost:8800/games", data);
+      return axios.post("https://virtual-vanguard-mmo-f84f119b0dd9.herokuapp.com/games", data);
     },
     {
       onSuccess: () => {
@@ -107,7 +107,7 @@ export const Game = () => {
   const deleteGame = useMutation(
     (deletedData) => {
       console.log("deletedData", deletedData);
-      return axios.delete("http://localhost:8800/games/delete", { data: deletedData });
+      return axios.delete("https://virtual-vanguard-mmo-f84f119b0dd9.herokuapp.com/games/delete", { data: deletedData });
     },
     {
       onSuccess: () => {

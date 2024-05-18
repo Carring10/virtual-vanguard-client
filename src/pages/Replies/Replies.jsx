@@ -16,7 +16,7 @@ export const Replies = ({ comment, deleteComment }) => {
 
   // 'articleId' and 'parentId' ensure each comment's replies are fetched separately
   const { data } = useQuery(["replies", articleId, parentId], () =>
-    axios.get(`http://localhost:8800/comments/${articleId}/${parentId}`).then((res) => {
+    axios.get(`https://virtual-vanguard-mmo-f84f119b0dd9.herokuapp.com/comments/${articleId}/${parentId}`).then((res) => {
       const data = res.data.replies;
 
       return data;

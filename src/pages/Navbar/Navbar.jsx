@@ -36,7 +36,7 @@ const handleClick = async (event) => {
   sessionStorage.removeItem("user");
 
   try {
-    await axios.delete("http://localhost:8800/auth/logout", {
+    await axios.delete("https://virtual-vanguard-mmo-f84f119b0dd9.herokuapp.com/auth/logout", {
       withCredentials: true,
     });
 

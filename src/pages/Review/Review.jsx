@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { AuthContext } from "../../context/authContext";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import axios from "axios";
@@ -15,7 +15,7 @@ console.log(review)
   const deleteReview = useMutation(
     (deletedReview) => {
       return axios.delete(
-        `http://localhost:8800/reviews/${deletedReview.id}/${deletedReview.userId}`
+        `https://virtual-vanguard-mmo-f84f119b0dd9.herokuapp.com/${deletedReview.id}/${deletedReview.userId}`
       );
     },
     {
