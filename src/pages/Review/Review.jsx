@@ -8,14 +8,14 @@ import "./review.css";
 export const Review = ({ review }) => {
   const { currentUser } = useContext(AuthContext);
   const queryClient = useQueryClient();
-console.log(review)
+  console.log(review)
   const username = review.username;
   const capitalizedUsername = username[0].toUpperCase() + username.slice(1);
 
   const deleteReview = useMutation(
     (deletedReview) => {
       return axios.delete(
-        `https://virtual-vanguard-mmo-f84f119b0dd9.herokuapp.com/${deletedReview.id}/${deletedReview.userId}`
+        `https://virtual-vanguard-mmo-f84f119b0dd9.herokuapp.com/reviews/${deletedReview.id}/${deletedReview.userId}`
       );
     },
     {
