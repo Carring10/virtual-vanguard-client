@@ -4,7 +4,7 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import axios from "axios";
 import { Navbar } from "../Navbar/Navbar";
 import { Link } from "react-router-dom";
-import defaultPic from "../../images/default-pic.jpg";
+import defaultPic from "./public/upload/default-pic.jpg";
 import "./profile.css";
 
 export const Profile = () => {
@@ -54,7 +54,7 @@ export const Profile = () => {
     } else {
       return (
         <img
-          src={"/upload/" + currentUser.profilePic}
+          src={"public/upload/" + currentUser.profilePic}
           alt="Default"
           className="profile-pic"
         />
@@ -95,10 +95,8 @@ export const Profile = () => {
 
     if (file) {
       updatePic.mutate({ username, profilePic: profileUrl });
-      console.log(updatePic);
-      console.log(username, profileUrl);
-      // setCurrentUser();
-      // window.location.reload();
+
+      window.location.reload();
     }
   };
 
