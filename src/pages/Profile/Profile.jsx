@@ -97,7 +97,7 @@ export const Profile = () => {
     if (file) {
       updatePic.mutate({ username, profilePic: profileUrl });
       setCurrentUser(updatePic);
-      window.location.reload();
+      // window.location.reload();
     }
   };
 
