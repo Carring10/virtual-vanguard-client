@@ -142,7 +142,7 @@ export const Profile = () => {
       <div className="profile-container">
         <h1 className="profile-header">Profile</h1>
         <div className="profile-contents">
-          <p className="profile-username">{capitalizedUsername}</p>
+          <p className="profile-username">{username && capitalizedUsername}</p>
           <div className="profile-pic-container">
             {placeholderImg()}
             <label className="overlay">
