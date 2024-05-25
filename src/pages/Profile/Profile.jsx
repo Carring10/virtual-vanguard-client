@@ -4,7 +4,7 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import axios from "axios";
 import { Navbar } from "../Navbar/Navbar";
 import { Link } from "react-router-dom";
-import defaultPic from "../../../public/upload/default-pic.jpg";
+import defaultPic from "./upload/default-pic.jpg";
 import "./profile.css";
 
 export const Profile = () => {
