@@ -22,7 +22,7 @@ export const ReviewSection = ({ gameId }) => {
     ["reviews"],
     () =>
       axios.get(`https://virtual-vanguard-mmo-f84f119b0dd9.herokuapp.com/reviews/${gameId}`).then((res) => {
-        const data = res.data.data.reviews;
+        const data = res.data.reviews;
         console.log(data);
         return data;
       }),
