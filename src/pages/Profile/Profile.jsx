@@ -13,7 +13,6 @@ export const Profile = () => {
   const queryClient = useQueryClient();
 
   const username = currentUser.username;
-  const capitalizedUsername = username[0].toUpperCase() + username.slice(1);
 
   const genreColors = {
     MMORPG: "#FF5733",
@@ -142,7 +141,7 @@ export const Profile = () => {
       <div className="profile-container">
         <h1 className="profile-header">Profile</h1>
         <div className="profile-contents">
-          <p className="profile-username">{username && capitalizedUsername}</p>
+          <p className="profile-username">{username && username[0].toUpperCase() + username.slice(1)}</p>
           <div className="profile-pic-container">
             {placeholderImg()}
             <label className="overlay">
