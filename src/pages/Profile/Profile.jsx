@@ -54,7 +54,7 @@ export const Profile = () => {
     } else {
       return (
         <img
-          src={"./upload/" + currentUser.profilePic}
+          src={"/upload/" + currentUser.profilePic}
           alt="Default"
           className="profile-pic"
         />
