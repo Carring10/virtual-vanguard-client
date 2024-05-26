@@ -21,12 +21,7 @@ export const AuthContextProvider = ({ children }) => {
   }
 
   const register = async (input) => {
-    const setDefaultPic = {
-      ...input,
-      profilePic: defaultPic
-    };
-
-    const res = await axios.post('https://virtual-vanguard-mmo-f84f119b0dd9.herokuapp.com/auth/register', input, setDefaultPic);
+    const res = await axios.post('https://virtual-vanguard-mmo-f84f119b0dd9.herokuapp.com/auth/register', input);
     setCurrentUser(res.data);
   }
   
