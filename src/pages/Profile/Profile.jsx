@@ -54,7 +54,7 @@ export const Profile = () => {
     } else {
       return (
         <img
-          src={"/upload/" + currentUser.profilePic}
+          src={"https://github.com/Carring10/virtual-vanguard-client/blob/main/src/upload/" + currentUser.profilePic}
           alt="Default"
           className="profile-pic"
         />
