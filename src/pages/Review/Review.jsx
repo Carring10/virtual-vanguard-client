@@ -67,7 +67,7 @@ export const Review = ({ review }) => {
     <>
       <div className="comment-container">
         <img
-          src={"/upload/" + review.profilePic}
+          src={"../../upload/" + review.profilePic}
           alt="Default"
           className="comment-profile-pic"
         />
